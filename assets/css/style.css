@@ -1,0 +1,265 @@
+/********************************************************** General Styling ************************************************************************************************************/
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --strong: #3a4b53;
+  --primary: #4d636f;
+  --secondary: #7d97a5;
+}
+
+body {
+  background-color: #f5f7f8;
+}
+
+.row {
+  margin: 1%;
+}
+
+/********************************************************** Start Styling the Navbar Section  ******************************************************************************************/
+.navbar {
+  background-color: var(--primary);
+  color: #fff;
+}
+.navbar a {
+  color: #fff;
+}
+.navbar .logo {
+  background-color: var(--strong);
+}
+
+.big-icon {
+  font-size: 25px;
+}
+.light {
+  color: #fff !important;
+}
+.relative {
+  position: relative;
+}
+.notification-lg {
+  padding: 6px 10px 6px 10px;
+  position: absolute;
+  top: 1%;
+  left: 55%;
+  display: block;
+}
+/********************************************************** End Styling the Navbar Section  ******************************************************************************************/
+
+/********************************************************** Start Styling the left Part Section (col-3) ******************************************************************************************/
+/*********************** Start the Profile Part ***********************/
+.profile,
+.card.groups,
+.interests {
+  margin-bottom: 5%;
+}
+.profile {
+  text-align: center;
+}
+
+.profile i {
+  color: var(--primary);
+}
+
+.profile p {
+  text-align: left;
+}
+
+/*********************** End the Profile Part ***********************/
+/*********************** Start the list Part ***********************/
+
+.card.groups ul li {
+  background-color: var(--secondary);
+  color: #fff;
+  font-size: large;
+  border-color: var(--secondary);
+}
+
+.interests span {
+  display: inline-block;
+  padding: 1% 1% 1% 1%;
+}
+
+.interests .card-body :nth-child(2),
+.interests .card-body :nth-child(3),
+.interests .card-body :nth-child(4) {
+  background-color: var(--strong);
+}
+
+.interests .card-body :nth-child(5),
+.interests .card-body :nth-child(6),
+.interests .card-body :nth-child(7) {
+  background-color: var(--primary);
+}
+.interests .card-body :nth-child(8),
+.interests .card-body :nth-child(9),
+.interests .card-body :nth-child(10) {
+  background-color: var(--secondary);
+}
+.interests .card-body :nth-child(11),
+.interests .card-body :nth-child(12),
+.interests .card-body :nth-child(13) {
+  background-color: #dfe5e8;
+  color: #000;
+  border: 1px solid var(--strong);
+}
+
+.interests .card-body :nth-child(14),
+.interests .card-body :nth-child(15) {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid var(--strong);
+}
+
+.btn-close {
+  background-color: gray;
+  color: #000 !important;
+  font-size: small !important;
+  font-weight: bolder !important;
+  padding: 2% !important;
+  opacity: 1 !important;
+  border-radius: 0% !important;
+}
+/********************************************************** End Styling the left Part Section  ******************************************************************************************/
+
+/********************************************************** Start Styling the middle Part Section  ******************************************************************************************/
+/*********************** Start the post Part ***********************/
+.post,
+.posts {
+  margin-bottom: 1%;
+}
+.post {
+  padding: 1.5% 5% 1% 2%;
+}
+.card.post:nth-child(1) {
+  color: #928f8f;
+}
+.card.post input {
+  padding: 0.5% 1% 0.5% 1%;
+  border: 0.5px solid rgb(180, 174, 174);
+}
+
+::placeholder {
+  color: #000;
+}
+
+.post button,
+.posts button {
+  background-color: var(--primary);
+  width: fit-content;
+  border-color: var(--primary);
+  border-radius: 0%;
+}
+.post button:hover,
+.posts button:hover {
+  background-color: var(--secondary);
+}
+
+/*********************** End the post Part ***********************/
+/*********************** Start the posts Part ***********************/
+.posts {
+  padding: 1.5% 1% 1% 1%;
+}
+.posts header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  color: #928f8f;
+  margin-right: 3%;
+}
+.two-images {
+  display: flex;
+  justify-content: space-around;
+}
+.two-images img {
+  display: block !important;
+  margin-right: 0.5%;
+}
+
+.buttons {
+  margin-bottom: 0.5%;
+}
+
+/*********************** End the posts Part ***********************/
+/********************************************************** End Styling the middle Part Section  ******************************************************************************************/
+/********************************************************** Start Styling the right Part Section  ******************************************************************************************/
+.events,
+.request,
+.ads,
+.bug {
+  margin-bottom: 10%;
+  padding: 3% 10% 2% 4%;
+  text-align: center;
+}
+.events button {
+  background-color: #e2e4e4;
+  border-color: #e2e4e4;
+  color: #000;
+  font-size: large;
+  font-weight: bold;
+  margin: 5%;
+}
+.events button:hover {
+  background-color: var(--secondary);
+}
+
+.acceptance-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.acceptance-btns button {
+  width: 40% !important;
+  border-radius: 0%;
+}
+
+.ads,
+.bug {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ads {
+  min-height: 4%;
+}
+
+.bug {
+  min-height: 5%;
+}
+
+.bug i {
+  font-size: 40px;
+  color: #000;
+}
+/********************************************************** End Styling the right Part Section  ******************************************************************************************/
+/********************************************************** Start Styling the footer  ******************************************************************************************/
+.foot,
+.powered {
+  color: #fff;
+}
+.foot {
+  background-color: var(--primary);
+  padding: 1% 0% 1% 1%;
+}
+
+.powered {
+  background-color: var(--strong);
+  padding: 0.5% 0% 0.5% 0.5%;
+}
+
+.powered span {
+  text-decoration: underline;
+}
+
+/********************************************************** End Styling the footer  ******************************************************************************************/

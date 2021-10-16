@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD-Session3 (Bootstrap) </title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+    <!-- Start the Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand logo p-4" href="#">
+                <i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp; Logo
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item pe-3 ps-3 big-icon">
+                        <a class="nav-link light" aria-current="page" href="#"><i
+                                class="fas fa-globe-africa"></i>&nbsp;&nbsp;
+                            <span class="d-lg-none d-xs-block">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item pe-3 ps-3 big-icon">
+                        <a class=" nav-link ms-1 light" href="#"><i class="fas fa-id-badge"></i>&nbsp;&nbsp;
+                            <span class="d-lg-none d-xs-block">My Profile</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item pe-3 ps-3 big-icon">
+                        <a class="nav-link light" href="#"><i class="fas fa-envelope"></i>&nbsp;&nbsp;
+                            <span class="d-lg-none d-xs-block">Messages</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item pe-3 ps-3 big-icon">
+                        <a class="nav-link light relative" href="#"><i class="fas fa-bell"></i><span
+                                class="notification-lg d-lg-block d-xs-none badge rounded-pill bg-success d-none d-lg-block d-xl-block">
+                                7</span>
+                            <span class="badge bg-success d-lg-none d-xl-none">7</span>
+                            <span class="d-lg-none d-xs-block">Notifications</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="p-1">
+                    <img class="rounded-circle d-lg-block d-none col-xs-1 mx-5" src="assets/images/534.jpg"
+                        alt="MyPhoto" width="70" height="70">
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End the Navbar Section -->
+    <!-- Start the main container part -->
+
+    <main class="container-fluid">
+        <div class="row">
+            <!-- Start the left part section (col-3) -->
+
+            <div class="col-lg-3 col-xs-12">
+                <!--Start the Profile part-->
+
+                <div class="card profile shadow">
+                    <div class="card-body">
+                        <h4 class="card-title h3">My Profile</h4>
+                        <img src="./assets/images/534.jpg" class="rounded-circle col-6 col-md-6" alt="My Photo">
+                        <hr>
+                        <p class="fw-bold"><i class="fas fa-pencil-alt"></i> &nbsp;&nbsp;Front-end Engineer</p>
+                        <p class="fw-bold"><i class="fas fa-home"></i> &nbsp;&nbsp;Giza, Egypt</p>
+                        <p class="fw-bold"><i class="fas fa-birthday-cake"></i> &nbsp;&nbsp;July 21, 1995</p>
+                    </div>
+                </div>
+                <!--End the Profile part-->
+                <!--Start the list part-->
+                <div class="card groups shadow">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-circle-notch"></i> &nbsp;&nbsp;&nbsp;&nbsp;My
+                            Groups</li>
+                        <li class="list-group-item"><i class="fas fa-calendar-check"></i> &nbsp;&nbsp;&nbsp;&nbsp;My
+                            Events</li>
+                        <li class="list-group-item"><i class="fas fa-users"></i>&nbsp;&nbsp;&nbsp;&nbsp;My Photos</li>
+                    </ul>
+                </div>
+                <!--End the list part-->
+                <!--Start the interests part-->
+
+                <div class="card interests shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Interests</h5>
+                        <span class="badge">Quar2an</span>
+                        <span class="badge">Islam</span>
+                        <span class="badge">Web development</span>
+                        <span class="badge">English</span>
+                        <span class="badge">Programming</span>
+                        <span class="badge">Books</span>
+                        <span class="badge">Swimming</span>
+                        <span class="badge">Cooking</span>
+                        <span class="badge">Crochet</span>
+                        <span class="badge">German</span>
+                        <span class="badge">IOT</span>
+                        <span class="badge">Traveling</span>
+                        <span class="badge">medicine</span>
+                        <span class="badge">Psychology</span>
+                        <span class="badge">Relationships</span>
+
+                    </div>
+                </div>
+                <!--End the interests part-->
+                <!--Start the alert part-->
+
+                <div class="alert alert-dark alert-dismissible fade show pop" role="alert">
+                    <strong>Hey!</strong><br />
+                    People are looking at your profile. Find out<br /> who.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+            <!--End the alert part-->
+            <!-- End the left part section (col-3) -->
+
+            <!-- Start the middle section (col-7)-->
+
+            <div class="col-lg-7 col-xs-12">
+                <!--Start The Post Part -->
+
+                <div class="card post shadow">
+                    <p>Social Media template by w3.css</p>
+                    <input type="text" placeholder="Status: feeling Satisfied" /><br />
+                    <button type="button" class="btn btn-primary"><i class="fas fa-pencil-alt"></i>
+                        &nbsp;Post</button>
+                </div>
+                <!--End The Post Part -->
+                <!--Start The Post#1 Part -->
+
+                <div class="card posts shadow">
+                    <header>
+                        <div class="fw-bold"><img src="./assets/images/ayman.jpg" class="rounded-circle col-2 col-md-1"
+                                alt="Ayman's Photo">
+                            &nbsp;&nbsp;أيمن
+                            عبد الرحيم</div>
+                        <div class="time">5 min</div>
+                    </header>
+                    <hr>
+                    <p style="direction: rtl;">لا أعرفُ في جيلِ (أيمن عبد الرحيم) أحداً مِثلَ (أيمن عبد الرحيم) !!<br />
+                        يُعطيكَ أيمن عبد الرحيم إحساساً بأن الثقب الأسود الذي يُنْشِئُه بين الأجيال تجريفُ الوعي، وطولُ
+                        الأمدِ، وإِنَّا وجدنا
+                        آباءَنا على أُمَّة؛ لا يمكن أن يبتلعَ النجومَ التي تلمعُ فيه جاعلةً من نفسها منارَ هُدىً يهدي
+                        السائرين في عَتَمَاتِه،
+                        وحلقةَ وصلٍ تَصِلُ ما انقطعَ وتُجَدِّدُ مَا رَثّ، وصراطَ نورٍ يعبر عليه الناجون من أرض التيه إلى
+                        أرض الميعاد!!
+                        لا أذكر أني رأيت أيمن عبد الرحيم ثم لم أتذكر قولَ عمر رضي الله عنه في ابن عباس رضي الله عنهما:
+                        ذاك فتى الكهول له لسان
+                        سؤول وقلب عقول!!
+                    </p>
+                    <div class="two-images"><img src="./assets/images/ayman1.jpg" class="float-start col-6 col-md-6 "
+                            alt="Ayman's Photo">
+                        <img src="./assets/images/ayman2.jpg" class="float-start mx-auto col-6 col-md-6"
+                            alt="Ayman's Photo">
+                    </div><br />
+                    <div class="buttons"><button type="button" class="btn btn-primary"><i class="fas fa-thumbs-up"></i>
+                            &nbsp;like</button>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-comment"></i>
+                            &nbsp;Comment</button>
+                    </div>
+                </div>
+                <!--End The Post#1 Part -->
+                <!--Start The Post#2 Part -->
+
+                <div class="card posts shadow">
+                    <header>
+                        <div class="fw-bold"><img src="./assets/images/shafei.jpg" class="rounded-circle col-2 col-md-2"
+                                alt="Ayman's Photo">
+                            &nbsp;&nbsp;الإمام الشافعي</div>
+                        <div class="time">16 min</div>
+                    </header>
+                    <hr>
+                    <p style="direction: rtl;">“إذا المرء لا يرعاك إلا تكلفاً.. فدعه ولا تُكثِر عليه التأسفا
+                        ففي الناس أبدال وفي الترك راحةٌ.. وفي القلب صبرٌ للحبيب ولو جفا
+                        فما كل من تهواه يهواكَ قلبُه.. ولا كل من صافيته لك قد صفا
+                        إذا لم يكن صفو الوداد طبيعةً.. فلا خيرَ في ودٍ يجئُ تكلٌفا
+                        ولا خيرَ في خِلٍ يخون خليله.. ويلقاهُ من بعدِ المودة بالجفا
+                        ويُنكِرُ عيشاً قد تقادم عهدهُ.. ويُظهِرُ سراً كان بالأمس قد خفا
+                        سلامٌ على الدنيا إذا لم يكن بها.. صديقٌ صدوقٌ صادقُ الوعدِ مُنصِفا” <i class="fas fa-heart"></i>
+                    </p>
+                    <div class="buttons"><button type="button" class="btn btn-primary"><i class="fas fa-thumbs-up"></i>
+                            &nbsp;like</button>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-comment"></i>
+                            &nbsp;Comment</button>
+                    </div>
+                </div>
+                <!--End The Post#2 Part -->
+                <!--Start The Post#3 Part -->
+
+
+                <div class="card posts shadow">
+                    <header>
+                        <div class="fw-bold"><img src="./assets/images/abdulrahman.jpg"
+                                class="rounded-circle col-2 col-md-2" alt="Ayman's Photo">
+                            &nbsp;&nbsp;عبد الرحمن ذاكر الهاشمي </div>
+                        <div class="time">32 min</div>
+                    </header>
+                    <hr>
+                    <p style="direction: rtl;">
+                        إن مجرد النظر ، مع قليل من التأمل في زوايا الحياة اليومية في البيت وفي المسجد وفي الشارع وفي
+                        المدرسة والجامعة وفي
+                        السوق وفي
+                        الشركة وفي الملعب وفي غيرها ليكفي أن يستفز ويستنفر ويدفع بي كإنسان، أحس و أفكر و أعقل ، لأن
+                        أعتني بأمر النفس، وأخشى
+                        على حالها ومستقبلها ، سيما إذا علمنا أن النفس هي عنصر البناء الحضارة؛ فكيف إذا كان كاتب هذه
+                        السطور هو من الباحثين
+                        والمشتغلين والمختصين بــالنفس ؟!
+                    </p>
+                    <div class="two-images"><img src="./assets/images/m3nfsy.jpg" class="img-fluid col-12 col-xs-12 "
+                            alt=" Ayman's Photo">
+                    </div><br />
+                    <div class="buttons"><button type="button" class="btn btn-primary"><i class="fas fa-thumbs-up"></i>
+                            &nbsp;like</button>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-comment"></i>
+                            &nbsp;Comment</button>
+                    </div>
+                </div>
+                <!--End The Post#3 Part -->
+
+            </div>
+            <!-- End the midlle section (col-3) -->
+            <!-- Start the right part section (col-2) -->
+            <div class="col-lg-2 col-xs-12">
+                <!--Start The Events Part -->
+                <div class="card events shadow">
+                    <h6>Upcoming Events:</h6>
+                    <img src="./assets/images/js.jpeg" class="img-fluid col-12 col-xs-12 " alt=" Event's Photo">
+                    <h5>EgyptJS</h5>
+                    <p>Friday 15:00</p>
+                    <button type="button" class="btn btn-primary">Info</button>
+                </div>
+                <!--End The Events Part -->
+                <!--Start The Request Part -->
+
+                <div class="card request shadow">
+                    <h6>Friend Request</h6>
+                    <img src="./assets/images/37.jpg" class="rounded mx-auto d-block col-6 col-xs-6"
+                        alt=" friend request's Photo" /><br />
+                    <h6>Rana Helmy</h6>
+
+
+                    <div class="acceptance-btns">
+                        <button type="button" class="btn btn-success col-6 col-xs-6"><i
+                                class="fas fa-check"></i></button>
+                        <button type="button" class="btn btn-danger col-6 col-xs-6"><i
+                                class="fas fa-times"></i></button>
+                    </div><br />
+                </div>
+                <!--End The Request Part -->
+                <!--Start The Ads & Bugs Part -->
+
+
+                <div class="card ads shadow">
+                    <h6>ADS</h6>
+                </div>
+
+                <div class="card bug shadow">
+                    <p><i class="fas fa-bug"></i></p>
+                </div>
+                <!--End The Ads & Bugs Part -->
+
+            </div>
+            <!-- End the right part section (col-2) -->
+        </div>
+    </main>
+    <!-- End the main container part -->
+    <!-- Start the footer section -->
+
+    <footer class="container-fluid row">
+
+        <div class="foot col-xs-12">
+            <h6>Footer</h6>
+        </div>
+        <div class="powered col-xs-12">
+            <h6>Powered by <span>w3.css</span></h6>
+        </div>
+    </footer>
+
+    <!-- End the footer section -->
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
